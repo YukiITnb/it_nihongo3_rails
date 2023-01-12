@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
+  get 'users/show'
   get 'static_pages/home'
   root 'static_pages#home'
-  # get '/users/sign_out'
   resources :books
   devise_for :users
     devise_scope :user do  
